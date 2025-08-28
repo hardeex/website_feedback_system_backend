@@ -9,3 +9,4 @@ Route::put('/feedback/{feedback}', [FeedbackController::class, 'updateDeveloperR
 Route::get('/projects', [ProjectController::class, 'index']);
 Route::get('/projects/{project}', [ProjectController::class, 'show']);
 Route::get('/projects/{project}/feedback', [FeedbackController::class, 'index']);
+Route::post('/add/project', [ProjectController::class, 'store']);
